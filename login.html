@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login-Page</title>
+</head>
+<body>
+    <div class="login">
+        <input type="password" class="inputPassword" id="inputPassword" name="input-password" placeholder="masukkan password">
+        <button class="btn-enter" id="submit-button">masuk</button>
+    </div>
+    <p class="error" id="error"></p>
+</body>
+<script>
+    const password = 12122023;
+    const targetPage = "index.html";
+
+    const inputPassword = document.getElementById("inputPassword")
+    const submitButton = document.getElementById("submit-button")
+    const pwError = document.getElementById("error")
+    
+    function checkPassword() {
+        if (inputPassword.value == password) {
+            window.location.href = targetPage;
+        } else {
+           error.textContent = "Password salah, coba lagi.";
+           error.style.color = "white"
+            
+        }
+    }
+
+
+    submitButton.addEventListener(`click`, checkPassword)
+
+
+        
+</script>
+</html>

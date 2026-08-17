@@ -1,0 +1,251 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #5500ff, #b56ef8);
+}
+
+.main {
+    flex: 1;
+}
+
+.footer {
+    text-decoration: none;
+    margin-top: auto;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgb(94, 93, 94);
+    color: rgb(251, 251, 253);
+    font-family: "Bitcount Prop Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(content/love.png);
+    color: rgb(0, 0, 0);
+    gap: 40px;
+}
+
+.dark-mode {
+    background-image: none;
+    background: linear-gradient(135deg, #1f005e, #49008e);
+    color: white;
+}
+
+.tulisan:hover {
+    background-color: #00000053;
+    font-size: 30px;
+    border-radius: 50%;
+    border-color: rgb(0, 0, 0);
+    border-width: 3px;
+    box-shadow: 0 0 20px rgba(245, 245, 245, 0.726);
+}
+
+.tulisan {
+    padding: 12px;
+    background-color: black;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    color: rgb(254, 254, 254);
+    font-size: 28px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: monospace;
+}
+
+.p1 {
+    position: relative;
+    line-height: 2;
+    font-size: 18px;
+    font-family: "Bitcount Prop Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
+}
+
+
+
+.inikita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ini konten */
+
+.isiKontenHome {
+    padding: 15px;
+}
+
+.content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding: 40px;
+    color: white;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+
+}
+
+.textButton {
+    text-decoration: none;
+    color: white;
+}
+
+.button {
+    margin: 0px;
+    transition: all 0.5s ease-in-out;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 3px solid black;
+    cursor: pointer;
+    background: #7b00ff;
+    
+}
+
+.button:hover {
+    font-size: 16px;
+    display: inline-block;
+    border: 3px solid #00aaff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.5);;
+}
+/* ini konten */
+
+/* ini foto bersama */
+.galerikita {
+    max-width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.fotokita {
+    border: 3px solid transparent;
+    width: 100%;
+    height: auto;
+    transition: all 0.9s ease;
+}
+
+
+.fotokita:hover {
+    border: 3px solid black;
+    transform: scale(1.05);
+    box-shadow: -1px -1px 248px 0px rgba(108,0,255,0.57);
+    -webkit-box-shadow: -1px -1px 248px 0px rgba(108,0,255,0.57);
+    -moz-box-shadow: -1px -1px 248px 0px rgba(108,0,255,0.57);;
+}
+
+/* ini foto bersama */
+
+.Username {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.firiski {
+    width: 200px;
+    height: auto;
+    border: 6px dashed #000000eb;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.393);;
+    
+}
+
+.sosmed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: fit-content;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.firiski {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+@keyframes naik {
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+.btnLove {
+    display: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* login kinohhh */
+
+.login {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputPassword {
+    border-radius: 40px;
+    width: 300px;
+    height: auto;
+
+}
